@@ -1,0 +1,54 @@
+.main {
+    background-image: url("image1.jpg");
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+}
+
+.name {
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(19, 18, 18, 0.6);
+}
+
+.info {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.line {
+    border-bottom: solid;
+    color: steelblue;
+    font-family: Georgia;
+    text-align: center;
+}
+
+.tab {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    text-align: center;
+}
+
+.list {
+    margin: 0 auto;
+    display: table;
+}
