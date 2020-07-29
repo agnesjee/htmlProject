@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marksheet</title>
+    <style type="text/css">
+    .word{
+        margin: 8px;
+    }
+    .header{
+        font-size: 10pt;
+        font-weight: bold;
+        text-align: center;
+    }
+    .silver{
+        background-color: silver;
+    }
+    .rightAlign{
+        text-align: right;  
+    }
+    .centerAlign{
+        text-align: center;
+    }
+    .num{
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    .calCenter{
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    input:focus{
+        background-color: #CCFFFF;
+    }
+    .yellowChange:hover{
+        background-color: #FFFFCC;
+    }
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+        opacity: 1;
+    }
+    .markCol{
+        table-layout: auto;
+        width: 70px;
+    }
+    .idCol{
+        table-layout: auto;
+        width: 90px;
+    }
+    .nameCol{
+        table-layout: auto;
+        width: 250px;
+    }
+
+    </style>
+</head>
+
+<body class="word">
+    <h1>Student Marksheet</h1>
+
+    <table border="1" cellspacing="0" cellpadding="3" id="table">
+        <thead>
+            <tr>
+                <th rowspan="2" class="header silver">No</th>
+                <th colspan="2" class="header silver">Student</th>
+                <th colspan="5" class="header silver">Subject's Mark</th>
+                <th rowspan="2" class="header silver">Total<br/>Mark</th>
+                <th rowspan="2" class="header silver">Average<br/>Mark</th>
+                <th rowspan="2" class="header silver">Final<br/>Grade</th>  
+            </tr>
+            <tr>
+                <th class="header silver">ID</th>
+                <th class="header silver">Name</th>
+                <th class="header silver">English</th>
+                <th class="header silver">Math</th>
+                <th class="header silver">History</th>
+                <th class="header silver">Science</th>
+                <th class="header silver">Physics</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">1.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">2.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">3.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">4.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">5.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">6.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">7.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">8.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">9.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr>
+        <tr class="yellowChange ttr">
+            <td class="rightAlign num">10.</td>
+            <td><input type="text" name="ID" value="" maxlength="8" class="idCol"/></td>
+            <td><input type="text" name="Name" value="" maxlength="40" class="nameCol"/></td>
+            <td><input type="number" min="0" max="100" value="" name="English" class="English rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Math" class="Math rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="History" class="History rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Science" class="Science rightAlign"/></td>
+            <td><input type="number" min="0" max="100" value="" name="Physics" class="Physics rightAlign"/></td>
+            <td class="silver markCol rightAlign total"></td>
+            <td class="silver markCol rightAlign avg"></td>
+            <td class="silver markCol centerAlign grade"></td>
+        </tr> 
+        <tr>
+            <td colspan="3" class="rightAlign num">Average Mark by Subject</td>
+            <td class="silver markCol rightAlign engAvg"></td>
+            <td class="silver markCol rightAlign mathAvg"></td>
+            <td class="silver markCol rightAlign hisAvg"></td>
+            <td class="silver markCol rightAlign sciAvg"></td>
+            <td class="silver markCol rightAlign phyAvg"></td>
+            <td colspan="3"><input type="button" name="calculate" value="Calculate Marksheet" class="calCenter" onclick="calculate()"/></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+   
+    function calculate(){
+
+        //calculate english average marks
+        var totalEnglish = 0;
+        var num1 = 0;
+        var englishs = document.getElementsByClassName("English");
+
+        for(var i = 0; i < englishs.length; i++){
+            if(englishs[i].value != ""){
+                num1++;
+                totalEnglish += Number(englishs[i].value);
+            }
+        }
+        document.getElementsByClassName("engAvg")[0].innerHTML = (totalEnglish/num1).toFixed(1);
+
+        //calculate math average marks
+        var totalMath = 0;
+        var num1 = 0;
+        var maths = document.getElementsByClassName("Math");
+        
+        for(var i = 0; i < maths.length; i++){
+            if(maths[i].value != ""){
+                num1++;
+                totalMath += Number(maths[i].value);
+            }
+        }
+        document.getElementsByClassName("mathAvg")[0].innerHTML = (totalMath/num1).toFixed(1);
+
+        //calculate history average marks
+        var totalHistory = 0;
+        var num1 = 0;
+        var historys = document.getElementsByClassName("History");
+        
+        for(var i = 0; i < historys.length; i++){
+            if(historys[i].value != ""){
+                num1++;
+                totalHistory += Number(historys[i].value);
+            }
+        }
+        document.getElementsByClassName("hisAvg")[0].innerHTML = (totalHistory/num1).toFixed(1);
+
+        //calculate science average marks
+        var totalScience = 0;
+        var num1 = 0;
+        var sciences = document.getElementsByClassName("Science");
+        
+        for(var i = 0; i < sciences.length; i++){
+            if(sciences[i].value != ""){
+                num1++;
+                totalScience += Number(sciences[i].value);
+            }
+        }
+        document.getElementsByClassName("sciAvg")[0].innerHTML = (totalScience/num1).toFixed(1);
+
+        //calculate physics average marks
+        var totalPhysics = 0;
+        var num1 = 0;
+        var physicss = document.getElementsByClassName("Physics");
+        
+        for(var i = 0; i < physicss.length; i++){
+            if(physicss[i].value != ""){
+                num1++;
+                totalPhysics += Number(physicss[i].value);
+            }
+        }
+        document.getElementsByClassName("phyAvg")[0].innerHTML = (totalPhysics/num1).toFixed(1);
+
+
+        //calculate total marks, average marks, and final grade of an individual
+        var ttrs = document.getElementsByClassName("ttr");
+
+        for(var i = 0; i < ttrs.length; i++){
+            var sum = 0;
+
+            //get each row subject's score
+            var englishScore = ttrs[i].getElementsByClassName("English")[0].value;
+            var mathScore = ttrs[i].getElementsByClassName("Math")[0].value;
+            var historyScore = ttrs[i].getElementsByClassName("History")[0].value;
+            var scienceScore = ttrs[i].getElementsByClassName("Science")[0].value;
+            var physicsScore = ttrs[i].getElementsByClassName("Physics")[0].value;
+
+            if(englishScore == "" || mathScore == "" || historyScore == "" || scienceScore == "" || physicsScore == "")
+                continue;
+
+            //calculate total marks
+            sum += Number(englishScore);
+            sum += Number(mathScore);
+            sum += Number(historyScore);
+            sum += Number(scienceScore);
+            sum += Number(physicsScore);
+
+            //calculate average marks
+            var avg = (sum/5).toFixed(1);
+
+            //calculate grade
+            var grade = "";
+
+            if(Number(englishScore) < 50 || Number(mathScore) < 50 || Number(historyScore) < 50 || Number(scienceScore) < 50 || Number(physicsScore) < 50)
+                grade = "F";
+            else if(avg >= 50 && avg < 60)
+                grade = "D";
+            else if(avg >= 60 && avg < 70)
+                grade = "C";
+            else if(avg >= 70 && avg < 80)
+                grade = "B";
+            else if(avg >= 80 && avg <= 100)
+                grade = "A";
+
+            
+            ttrs[i].getElementsByClassName("total")[0].innerHTML = sum;
+            ttrs[i].getElementsByClassName("avg")[0].innerHTML = avg;
+            ttrs[i].getElementsByClassName("grade")[0].innerHTML = grade;
+
+        }
+
+    }
+
+        
+
+    </script>
+
+</body>
+</html>
